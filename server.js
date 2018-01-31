@@ -55,7 +55,7 @@ app.get( '/', ( req, res ) => {
 
 app.get( '/about', ( req, res ) => {
 	res.render( 'about.hbs', {
-		pageTitle: "About page dynamic",
+		pageTitle: "About page dynamic"
 
 	} );
 } );
@@ -63,6 +63,12 @@ app.get( '/about', ( req, res ) => {
 app.get( '/bad', ( req, res ) => {
 	res.send( {
 		errorMessage: "My personal error message"
+	} );
+} );
+
+app.get( '/portfolio', ( req, res ) => {
+	res.render( 'portfolio.hbs', {
+		pageTitle: "My portfolio"
 	} );
 } );
 
